@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Info</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+var user = {
+    email:"test@blah.com",
+    username:"Mark",
+    passwordHash: "SDFLKSJFEI",
+    charisma: 10,
+    constitution: 12,
+    dedication: 14,
+    fitness: 8
+}
+</script>
+
+<h1>Info</h1>
+
+<table id="stats">
+<tr>
+    <th><div id="username"></div></th>
+    <th>Stats and Loadout</th>
+    <th>Friend Feed</th>
+</tr>
+<tr>
+<td>
+<div id="avatar_placeholder"><img src="Images/avatar.png"></div>
+</td>
+
+<td>
+    <label>Charisma</label><br>
+    <progress value="0" max="20" id="charisma"></progress><br>
+    <label>Constitution</label><br>
+    <progress value="0" max="20" id="constitution"></progress><br>
+    <label>Dedication</label><br>
+    <progress value="0" max="20" id="dedication"></progress><br>
+    <label>Fitness</label><br>
+    <progress value="0" max="20" id="fitness"></progress><br>
+
+
+    <div id="entry">Lorem ipsum</div>
+    <div id="entry">Lorem ipsum</div>
+    <div id="entry">Lorem ipsum</div>
+    <div id="entry">Lorem ipsum</div>
+    <div id="entry">Lorem ipsum</div>
+</td>
+
+<td>
+    <div id="entry">Lorem ipsum</div>
+    <div id="entry">Lorem ipsum</div>
+    <div id="entry">Lorem ipsum</div>
+    <div id="entry">Lorem ipsum</div>
+    <div id="entry">Lorem ipsum</div>
+    <div id="entry">Lorem ipsum</div>
+</td>
+
+</tr>
+</table>
+
+<table id="navigation">
+<tr>
+    <td><a href="Map.html"><img src="Images/NavBar/home.png"></a></td>
+    <td><a href="Info.html"><img src="Images/NavBar/gameinfo.png"></a></td>
+    <td><a href="http://www.newheartnm.com"><img src="Images/NavBar/newheart.png"></a></td>
+    <td><a href="Login.html"><img src="Images/NavBar/signin.png"></td>
+</tr>
+</table>
+
+<script type="text/javascript">
+document.getElementById('username').innerHTML = user.username;
+document.getElementById('charisma').value = user.charisma;
+document.getElementById('constitution').value = user.constitution;
+document.getElementById('dedication').value = user.dedication;
+document.getElementById('fitness').value = user.fitness;
+</script>
+
+</body></html>
