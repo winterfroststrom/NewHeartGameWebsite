@@ -1,4 +1,4 @@
-html{
+html {
     background:url('Images/newheart_hires_logo.png') no-repeat center center fixed;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -6,7 +6,7 @@ html{
     background-size:cover;
 }
 
-fieldset{
+fieldset {
     border:0;
 }
 
@@ -15,7 +15,7 @@ input[type=range]:before { content: attr(min); padding-right: 5px; }
 input[type=range]:after { content: attr(max); padding-left: 5px;}
 
 .box {
-    background: white;
+    background: rgba(255, 255, 255, 0.5);
     -moz-box-shadow: 10px 10px 30px rgba(0,0,0,.3);
     -webkit-box-shadow: 10px 10px 30px rgba(0,0,0,.3);
     box-shadow: 10px 10px 30px rgba(0,0,0,.3);
@@ -25,46 +25,32 @@ input[type=range]:after { content: attr(max); padding-left: 5px;}
     border-radius: 10px;
     border-width: 1px;
     border-style: solid;
-    border-color: rgb(150,150,150);
+    border-color: rgba(150,150,150, 0.5);
 }
 
 /*LOGIN*/
-#login
-{
-    background:url('Images/entry_form_background.png') no-repeat center center;
-    background-size: 100% auto;
+#login {
+    width: 250px;
+    height: 200px;
+    padding: 20px;
     position: absolute;
-    height: 290px;
-    width: 300px;
-    padding: 40px;
-    top: 25%;
-    left: 0;
-    right: 0;
+    margin-left: -135px;
+    margin-top: -150px;
+    left: 50%;
+    top: 35%;
     z-index: 0;
-    margin-left:auto;
-    margin-right:auto;
 }
-
-#login:before
-{
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -moz-box-shadow: 0 0 0 1px #fff;
-    -webkit-box-shadow: 0 0 0 1px #fff;
-    box-shadow: 0 0 0 1px #fff;
-}
-
 
 /*SIGNUP*/
 #signup {
-    position: relative;
-    top:25%;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
+    width: 525px;
+    height: 400px;
     padding: 25px;
+    position: absolute;
+    margin-left: -275px;
+    margin-top: -200px;
+    left: 50%;
+    top: 35%;
 }
 
 #signup table {
@@ -74,17 +60,17 @@ input[type=range]:after { content: attr(max); padding-left: 5px;}
 
 
 /*STATS / GAME INFO*/
-#stats{
+#stats {
     position: relative;
     display: block;
     padding: 25px;
     margin-top: 10%;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     min-width: 600px;
     max-width:700px;
-
 }
+
 #stats td {
     padding: 10px;
     min-width: 150px;
@@ -152,8 +138,7 @@ label.stat.attribute {
 
 
 /*NAVIGATION*/
-#navigation_container
-{
+#navigation_container {
     display: block;
     position: absolute;
     bottom: 0;
@@ -162,12 +147,10 @@ label.stat.attribute {
     z-index: 100;
 }
 
-#navigation
-{
+#navigation {
     position: relative;
     background: url('Images/NavBar/background.png') no-repeat center center;
     background-size: 100% auto;
-    /*background-color: rgba(255,255,255,0.2);*/
     text-align: center;
     padding: 0px;
     margin: 0px;
@@ -177,8 +160,7 @@ label.stat.attribute {
 
 
 
-h1
-{
+h1 {
     text-shadow: 0 1px 0 rgba(255, 255, 255, .7), 0px 2px 0 rgba(0, 0, 0, .5);
     text-transform: uppercase;
     text-align: center;
@@ -190,8 +172,7 @@ h1
     padding: 10px;
 }
 
-h2
-{
+h2 {
     text-shadow: 0 1px 0 rgba(255, 255, 255, .7), 0px 2px 0 rgba(0, 0, 0, .5);
     text-transform: uppercase;
     text-align: center;
@@ -201,8 +182,7 @@ h2
     font: normal 20px/1 Verdana, Helvetica;
 }
 
-#avatar_placeholder
-{
+#avatar_placeholder {
     min-width: 200px;
     min-height: 200px;
     border-color: #e88;
@@ -217,6 +197,7 @@ h2
 
 /*ABOUT*/
 #about {
+    position: relative;
     display: block;
     width: 60%;
     min-width: 200px;
