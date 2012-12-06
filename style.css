@@ -14,6 +14,20 @@ fieldset{
 input[type=range]:before { content: attr(min); padding-right: 5px; }
 input[type=range]:after { content: attr(max); padding-left: 5px;}
 
+.box {
+    background: white;
+    -moz-box-shadow: 10px 10px 30px rgba(0,0,0,.3);
+    -webkit-box-shadow: 10px 10px 30px rgba(0,0,0,.3);
+    box-shadow: 10px 10px 30px rgba(0,0,0,.3);
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(150,150,150);
+}
+
 /*LOGIN*/
 #login
 {
@@ -41,6 +55,7 @@ input[type=range]:after { content: attr(max); padding-left: 5px;}
     box-shadow: 0 0 0 1px #fff;
 }
 
+
 /*SIGNUP*/
 #signup {
     position: relative;
@@ -50,17 +65,6 @@ input[type=range]:after { content: attr(max); padding-left: 5px;}
     margin-left:auto;
     margin-right:auto;
     padding: 25px;
-    background: white;
-    -moz-box-shadow: 10px 10px 30px rgba(0,0,0,.4);
-    -webkit-box-shadow: 10px 10px 30px rgba(0,0,0,.4);
-    box-shadow: 10px 10px 30px rgba(0,0,0,.4);
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -khtml-border-radius: 10px;
-    border-radius: 10px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(150,150,150);
 }
 
 #signup table {
@@ -68,31 +72,29 @@ input[type=range]:after { content: attr(max); padding-left: 5px;}
     padding: 25px;
 }
 
+
 /*STATS / GAME INFO*/
 #stats{
     position: relative;
+    display: block;
+    padding: 25px;
+    margin-top: 10%;
     margin-left:auto;
     margin-right:auto;
-    padding: 25px;
-    margin: 10%;
     min-width: 600px;
-    /*margin-top: 20%;*/
-    background: white;
-    -moz-box-shadow: 10px 10px 30px rgba(0,0,0,.4);
-    -webkit-box-shadow: 10px 10px 30px rgba(0,0,0,.4);
-    box-shadow: 10px 10px 30px rgba(0,0,0,.4);
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -khtml-border-radius: 10px;
-    border-radius: 10px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(150,150,150);
+    max-width:700px;
 
 }
 #stats td {
     padding: 10px;
     min-width: 150px;
+    -moz-box-shadow: 0 0 0 1px #ddd;
+    -webkit-box-shadow: 0 0 0 1px #ddd;
+    box-shadow: 0 1px 2px 1px #ddd;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
 }
 
 label.stat {
@@ -101,6 +103,7 @@ label.stat {
 label.stat.attribute {
     font-weight: bold;
 }
+
 
 /*MAP*/
 #map {
@@ -223,15 +226,4 @@ h2
     top: 25%;
     margin-left:auto;
     margin-right:auto;
-    background: white;
-    -moz-box-shadow: 10px 10px 30px rgba(0,0,0,.4);
-    -webkit-box-shadow: 10px 10px 30px rgba(0,0,0,.4);
-    box-shadow: 10px 10px 30px rgba(0,0,0,.4);
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -khtml-border-radius: 10px;
-    border-radius: 10px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(150,150,150);
 }
