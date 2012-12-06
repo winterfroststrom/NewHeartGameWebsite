@@ -10,31 +10,20 @@ fieldset{
     border:0;
 }
 
-h1 { position: relative; }
-h1:hover { color: transparent; }
-
-h1:hover:after {
-    content: attr(data-hover-response);
-    color: black;
-    position: absolute;
-    left: 0;
-
-}
 
 input[type=range]:before { content: attr(min); padding-right: 5px; }
 input[type=range]:after { content: attr(max); padding-left: 5px;}
 
 #stats{
-    position: absolute;
-    top:25%;
-    left:35%;
+    position: relative;
     margin-left:auto;
     margin-right:auto;
+    max-width: 500px;
     padding: 25px;
 }
 #stats td {
     padding: 10px;
-    border: solid;
+
 }
 
 #signup {
@@ -96,18 +85,26 @@ input[type=range]:after { content: attr(max); padding-left: 5px;}
     padding: 25px;
 }
 
+#navigation_container
+{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 25px;
+    z-index: 100;
+}
+
 #navigation
 {
+    position: relative;
     background: url('Images/NavBar/background.png') no-repeat center center;
-    background-size: 100% auto;
-    position: absolute;
+    background-size: 120% auto;
     text-align: center;
-    padding: 50px;
-    left:  40%;
-    bottom: 0;
+    padding: 0px;
+    margin: 0px;
     z-index: 100;
-    margin-left:  auto;
-    margin-right: auto;
+    left: -50%;
 }
 
 #login
@@ -146,6 +143,18 @@ h1
     letter-spacing: 4px;
     font: normal 26px/1 Verdana, Helvetica;
     position: relative;
+    padding: 10px;
+}
+
+h2
+{
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .7), 0px 2px 0 rgba(0, 0, 0, .5);
+    text-transform: uppercase;
+    text-align: center;
+    color: #666;
+    margin: 0 0 30px 0;
+    letter-spacing: 4px;
+    font: normal 20px/1 Verdana, Helvetica;
 }
 
 h1:after, h1:before
@@ -192,4 +201,20 @@ h1:before
     -ms-box-shadow: 0 0 2px rbba(255, 0, 0, .8);
     box-shadow:0 0 2px rgba(255, 0, 0, .8);
 
+}
+
+#about {
+    display: block;
+    width: 60%;
+    min-width: 200px;
+    max-width: 700px;
+    padding: 25px;
+    margin: 100px;
+    top: 25%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: rgba(250,250,250,0.95);
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
