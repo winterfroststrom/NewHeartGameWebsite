@@ -34,18 +34,18 @@ var user = {
             </td>
 
             <td>
-                <label>Charisma</label><br>
+                <label class="stat">Charisma: </label><label id="charismaNum" class="stat attribute"></label><br>
                 <meter value="0" max="20" id="charisma"></meter><br>
-                <label>Constitution</label><br>
-                <meter value="0" max="20" id="constitution"></meter><br>
-                <label>Dedication</label><br>
+                <label class="stat">Constitution: </label><label id="constitutionNum" class="stat attribute"></label><br>
+                <meter value="0" max="20" id="constitution" class="stat attribute"></meter><br>
+                <label class="stat">Dedication: </label><label id="dedicationNum" class="stat attribute"></label><br>
                 <meter value="0" max="20" id="dedication"></meter><br>
-                <label>Fitness</label><br>
+                <label class="stat">Fitness: </label><label id="fitnessNum" class="stat attribute"></label><br>
                 <meter value="0" max="20" id="fitness"></meter><br>
 
 
-                <div id="entry">Lorem ipsum</div>
-                <div id="entry">Lorem ipsum</div>
+                <div id="entry">Lorem ipsum </div>
+                <div id="entry">Etiam viverra tempus ligula, varius posuere metus ornare vel.</div>
                 <div id="entry">Lorem ipsum</div>
                 <div id="entry">Lorem ipsum</div>
                 <div id="entry">Lorem ipsum</div>
@@ -81,6 +81,11 @@ document.getElementById('charisma').value = user.charisma;
 document.getElementById('constitution').value = user.constitution;
 document.getElementById('dedication').value = user.dedication;
 document.getElementById('fitness').value = user.fitness;
+
+document.getElementById('charismaNum').innerHTML = user.charisma;
+document.getElementById('constitutionNum').innerHTML = user.constitution;
+document.getElementById('dedicationNum').innerHTML = user.dedication;
+document.getElementById('fitnessNum').innerHTML = user.fitness;
 </script>
 
 </body></html>

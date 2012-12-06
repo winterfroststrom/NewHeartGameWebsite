@@ -73,9 +73,10 @@ input[type=range]:after { content: attr(max); padding-left: 5px;}
     position: relative;
     margin-left:auto;
     margin-right:auto;
-    max-width: 500px;
     padding: 25px;
-    margin-top: 20%;
+    margin: 10%;
+    min-width: 600px;
+    /*margin-top: 20%;*/
     background: white;
     -moz-box-shadow: 10px 10px 30px rgba(0,0,0,.4);
     -webkit-box-shadow: 10px 10px 30px rgba(0,0,0,.4);
@@ -91,8 +92,14 @@ input[type=range]:after { content: attr(max); padding-left: 5px;}
 }
 #stats td {
     padding: 10px;
+    min-width: 150px;
+}
 
-
+label.stat {
+    font-style: italic;
+}
+label.stat.attribute {
+    font-weight: bold;
 }
 
 /*MAP*/
@@ -141,7 +148,7 @@ input[type=range]:after { content: attr(max); padding-left: 5px;}
 }
 
 
-
+/*NAVIGATION*/
 #navigation_container
 {
     display: block;
@@ -205,6 +212,7 @@ h2
 
 }
 
+/*ABOUT*/
 #about {
     display: block;
     width: 60%;
